@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verade Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.7;
+        }
+        .bandeira-topo {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #f3e7ff, #dcfce7);
+        }
+        .bandeira-topo img {
+            max-height: 90px;
+            width: auto;
+        }
+        header {
+            background: linear-gradient(135deg, #5b21b6, #16a34a);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: #4c1d95;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #16a34a;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+        .destaque {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            border-left: 6px solid #16a34a;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .destaque h2 {
+            color: #4c1d95;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .categoria {
+            display: inline-block;
+            background: linear-gradient(135deg, #ddd6fe, #bbf7d0);
+            color: #4c1d95;
+            font-size: 0.85em;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        .grid-noticias {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card-noticia {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+        .card-noticia:hover {
+            transform: translateY(-5px);
+        }
+        .card-noticia h3 {
+            color: #5b21b6;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .card-noticia p {
+            color: #555;
+            font-size: 0.95em;
+        }
+        .botao {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #5b21b6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        .botao:hover {
+            background-color: #16a34a;
+        }
+        .data {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 10px;
+        }
+        footer {
+            background: linear-gradient(135deg, #4c1d95, #5b21b6);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        footer p {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bandeira-topo">
+        <img src="https://static.wikia.nocookie.net/mundo-torajo-fanon/images/2/25/Bandeira_de_Verade_%28R%C3%A9plica%29.jpg/revision/latest/scale-to-width-down/230?cb=20260822003110&path-prefix=pt-br" alt="Bandeira Verade">
+    </div>
+
+    <header>
+        <h1>Verade Online</h1>
+        <p>Notícias de Verade, para Verade 💚💜</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Início</a></li>
+            <li><a href="#">📰 Notícias</a></li>
+            <li><a href="#">ℹ️ Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="destaque">
+            <span class="categoria">✨ Bem-vindo</span>
+            <h2>Notícias e histórias de Verade</h2>
+            <p>Aqui você encontra as notícias, as histórias e as homenagens que importam. Cada fato contado com respeito e verdade.</p>
+        </div>
+
+        <h2 style="color: #4c1d95; margin-bottom: 25px;">📰 Últimas Notícias</h2>
+        
+        <div class="grid-noticias">
+            <div class="card-noticia">
+                <span class="categoria">💜 Homenagem</span>
+                <h3>Wike: Uma lembrança com carinho</h3>
+                <p>Relembrando a vida e a história de Wike, que deixou uma marca profunda em Verade e no coração de quem o amava.</p>
+                <a href="noticia-1.html" class="botao">Ler mais →</a>
+                <p class="data">📅 10 de novembro de 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Verade Online</h3>
+        <p style="margin-top: 10px;">Notícias de verdade, com respeito e cuidado</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">© 2026 — Para que a verdade e o amor sejam sempre lembrados 💚💜</p>
+    </footer>
+
+</body>
+</html>
